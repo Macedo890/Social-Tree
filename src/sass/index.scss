@@ -1,8 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
 
-$body-bg-color: #faf7fd;
-$purple: #bb99dd;
+$body-bg-color: #f7fdfa;
+$Marrs-Green: #00724a;
+$Verde-Floresta: #005a3f;
+$Verde-Musgo: #405f51;
+$Verde-Oliva: #6e7f71;
+$Verde-Escuro: #284c39;
+$Verde-Claro: #00a896;
 
 * {
+  box-sizing: border-box;
   margin: 0;
+}
+
+#Content {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $body-bg-color;
+}
+
+.links_Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: fit-content;
+  width: fit-content;
+  .link {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid $Marrs-Green;
+    background-color: transparent;
+    text-decoration: none;
+    color: $Marrs-Green;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0%;
+      height: 100%;
+      transform: translate(-50%, -0%);
+      background-color: $Marrs-Green;
+      transition: all 0.3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: $body-bg-color;
+      &:before {
+        transition: all 0.3s;
+        width: 100%;
+      }
+    }
+  }
 }
