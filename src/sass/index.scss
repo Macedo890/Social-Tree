@@ -1,5 +1,7 @@
+/* Define the font-family from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
 
+/* Define colors using variables */
 $body-bg-color: #f7fdfa;
 $Marrs-Green: #00724a;
 $Verde-Floresta: #005a3f;
@@ -8,11 +10,13 @@ $Verde-Oliva: #6e7f71;
 $Verde-Escuro: #284c39;
 $Verde-Claro: #00a896;
 
+/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
+/* Styles for the main content section */
 #Content {
   height: 100vh;
   width: 100vw;
@@ -23,6 +27,7 @@ $Verde-Claro: #00a896;
   background-color: $body-bg-color;
 }
 
+/* Styles for the links container */
 .links_Container {
   display: flex;
   justify-content: center;
@@ -30,6 +35,8 @@ $Verde-Claro: #00a896;
   gap: 20px;
   height: fit-content;
   width: fit-content;
+
+  /* Styles for the link items */
   .link {
     width: 350px;
     height: 50px;
@@ -38,6 +45,7 @@ $Verde-Claro: #00a896;
     justify-content: center;
     border: 1.5px solid $Marrs-Green;
     background-color: transparent;
+    border-radius: 20px;
     text-decoration: none;
     color: $Marrs-Green;
     font-family: "Poppins", sans-serif;
@@ -46,6 +54,7 @@ $Verde-Claro: #00a896;
     position: relative;
     z-index: 1;
 
+    /* Styles for the link hover effect */
     &:before {
       content: "";
       position: absolute;
@@ -53,16 +62,41 @@ $Verde-Claro: #00a896;
       left: 50%;
       width: 0%;
       height: 100%;
+      border-radius: 20px;
       transform: translate(-50%, -0%);
       background-color: $Marrs-Green;
       transition: all 0.3s;
       z-index: -1;
     }
+
+    /* Styles for the link hover effect */
     &:hover {
       color: $body-bg-color;
       &:before {
         transition: all 0.3s;
         width: 100%;
+      }
+    }
+  }
+}
+
+/* Styles for the icons container */
+.Icons_Container {
+  margin-top: 100px;
+  display: flex;
+  gap: 30px;
+
+  /* Styles for the font icon */
+  .bi {
+    font-size: 25px;
+    color: $Verde-Floresta;
+  }
+
+  /* Styles for the icon hover effect */
+  .icon {
+    &:hover {
+      .bi {
+        color: $Verde-Musgo;
       }
     }
   }

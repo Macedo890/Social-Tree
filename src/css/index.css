@@ -1,9 +1,13 @@
+/* Define the font-family from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+/* Define colors using variables */
+/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
+/* Styles for the main content section */
 #Content {
   height: 100vh;
   width: 100vw;
@@ -14,6 +18,7 @@
   background-color: #f7fdfa;
 }
 
+/* Styles for the links container */
 .links_Container {
   display: flex;
   justify-content: center;
@@ -21,6 +26,7 @@
   gap: 20px;
   height: fit-content;
   width: fit-content;
+  /* Styles for the link items */
 }
 .links_Container .link {
   width: 350px;
@@ -30,6 +36,7 @@
   justify-content: center;
   border: 1.5px solid #00724a;
   background-color: transparent;
+  border-radius: 20px;
   text-decoration: none;
   color: #00724a;
   font-family: "Poppins", sans-serif;
@@ -37,6 +44,8 @@
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+  /* Styles for the link hover effect */
+  /* Styles for the link hover effect */
 }
 .links_Container .link:before {
   content: "";
@@ -45,6 +54,7 @@
   left: 50%;
   width: 0%;
   height: 100%;
+  border-radius: 20px;
   transform: translate(-50%, 0%);
   background-color: #00724a;
   transition: all 0.3s;
@@ -56,6 +66,22 @@
 .links_Container .link:hover:before {
   transition: all 0.3s;
   width: 100%;
+}
+
+/* Styles for the icons container */
+.Icons_Container {
+  margin-top: 100px;
+  display: flex;
+  gap: 30px;
+  /* Styles for the font icon */
+  /* Styles for the icon hover effect */
+}
+.Icons_Container .bi {
+  font-size: 25px;
+  color: #005a3f;
+}
+.Icons_Container .icon:hover .bi {
+  color: #405f51;
 }
 
 /*# sourceMappingURL=index.css.map */
