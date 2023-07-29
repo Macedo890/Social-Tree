@@ -24,7 +24,7 @@ Social Tree is a simple web page that showcases social media icons and links for
 ## Installation
 
 Clone the repository using `git clone https://github.com/Macedo890/Social-Tree.git`
-Navigate to the project directory: `cd social-tree`
+Navigate to the project directory: `cd social_tree`
 
 <a name="usage"></a>
 
