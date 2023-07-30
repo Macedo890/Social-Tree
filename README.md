@@ -1,5 +1,7 @@
 # Social Tree
 
+![project example](example.png)
+
 Social Tree is a simple web page that showcases social media icons and links for easy access to various social platforms. The page includes icons for Twitter, Twitch, Instagram, LinkedIn, and Github.
 
 ## Table of Contents
