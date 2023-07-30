@@ -82,6 +82,50 @@
 }
 .Icons_Container .icon:hover .bi {
   color: #405f51;
+  border-bottom: 2px solid #005a3f;
+}
+
+.profile_container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.profile_container .imagem {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.profile_container .imagem .profile-image {
+  border-radius: 50%;
+  width: 250px;
+  outline: 2px dotted #00a896;
+}
+.profile_container .profile-input {
+  display: none;
+}
+.profile_container .label-profile {
+  padding: 10px;
+  background-color: #00724a;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #f7fdfa;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.profile_container .label-profile:hover {
+  transition: all 0.3s;
+  background-color: #405f51;
+}
+.profile_container .figure_text {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: xx-small;
+  color: #405f51;
 }
 
 /*# sourceMappingURL=index.css.map */

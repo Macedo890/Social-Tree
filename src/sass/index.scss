@@ -97,7 +97,64 @@ $Verde-Claro: #00a896;
     &:hover {
       .bi {
         color: $Verde-Musgo;
+        border-bottom: 2px solid $Verde-Floresta;
       }
     }
+  }
+}
+
+// Styles for the profile image container
+.profile_container {
+  margin-bottom: 20px;
+  text-align: center;
+
+  // Styles for the div representing the profile image
+  .imagem {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    // Styles for the profile image
+    .profile-image {
+      border-radius: 50%;
+      width: 250px;
+      outline: 2px dotted $Verde-Claro;
+    }
+  }
+
+  // Styles for the file input for image upload
+  .profile-input {
+    display: none;
+  }
+
+  // Styles for the label that triggers the file input
+  .label-profile {
+    padding: 10px;
+    background-color: $Marrs-Green;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: $body-bg-color;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+
+    // Hover effect on the label
+    &:hover {
+      transition: all 0.3s;
+      background-color: $Verde-Musgo;
+    }
+  }
+
+  // Styles for the caption of the figure
+  .figure_text {
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: xx-small;
+    color: $Verde-Musgo;
   }
 }

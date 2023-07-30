@@ -10,6 +10,8 @@
       href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+
+    <script src="../js/index.js" defer></script>
   </head>
 
   <body>
@@ -18,12 +20,23 @@
     <main>
       <section id="Content">
         <!-- Using the <figure> tag to represent a figure -->
-        <figure>
+        <figure class="profile_container">
           <!-- Div representing the image or icon (without the actual image, just a div with title "icon") -->
-          <div class="imagem" title="icon"></div>
+          <div class="imagem" title="icon">
+            <img
+              src="../img/profile.png"
+              alt="profile picture"
+              class="profile-image"
+            />
+          </div>
+
+          <label for="profile=-file" class="label-profile"
+            >Choose an image</label
+          >
+          <input type="file" name="" id="profile=-file" class="profile-input" />
 
           <!-- Caption of the figure with the title "Your Instagram" -->
-          <figcaption title="Your Instagram">
+          <figcaption class="figure_text" title="Your Instagram">
             <!-- Main title within the caption -->
             <h1>
               <!-- Emphasized text using the <em> tag for @instagram -->
